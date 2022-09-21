@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <style>
+        body {background-color: beige;
+        color: black;
+        font: normal 18pt Arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vem o resultado</p>
+    
+    <p> Aprendendo a utilizar o <strong>DOM</strong> Document Object Model</p><br>
+    <p> three dom, tudo dentro de window, ex location, document e history</p><br>
+    <p>dentro de document tem html, dentro de html head e body</p><br>
+    <div id="msg">Clique em mim</div>
+    <p>MARCA ID NOME CLASSE E SELETOR</p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'blue'
+        var d = window.document.getElementById('msg')
+        d.style.color = 'red'
+    </script>
+</body>
+</html>
